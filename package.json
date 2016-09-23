@@ -1,11 +1,11 @@
 {
-  "name": "WPGulp",
-  "author": "ahmadawais",
-  "version": "1.0.3",
+  "name": "Indicia.WPGulp",
+  "author": "Emilio Servigon via ahmadawais",
+  "version": "1.0",
   "license": "GPL-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ahmadawais/WPGulp"
+    "url": "https://github.com/eservigon/Indicia-Wordpress-Starter-Theme"
   },
   "dependencies": {},
   "devDependencies": {

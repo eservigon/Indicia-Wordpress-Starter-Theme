@@ -15,8 +15,8 @@
  *      8. InjectCSS instead of browser page reload.
  *      9. Generates .pot file for i18n and l10n.
  *
- * @author Ahmad Awais (@ahmadawais)
- * @version 1.0.3
+ * @author Emilio Servigon via Ahmad Awais
+ * @version 1.0
  */
 
 /**
