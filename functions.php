@@ -3,8 +3,7 @@
 * Theme functions and definitions
 *
  * @package 	WordPress
- * @subpackage 	Starkers
- * @since 		Starkers 4.0
+ * @subpackage 	Indicia Starter
 */
 
 /* THEME PATHS */
@@ -16,7 +15,7 @@ if ( !defined( 'ID_THEME_DIR' ) ){
 /* Required external files
 ======================================================================================================================== */
 
-	require_once( 'external/starkers-utilities.php' );
+	require_once( 'external/indicia-utilities.php' );
 
 
 /*  Theme specific settings

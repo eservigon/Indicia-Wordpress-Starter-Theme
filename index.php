@@ -9,11 +9,10 @@
  * Please see /external/starkers-utilities.php for info on Starkers_Utilities::get_template_parts()
  *
  * @package 	WordPress
- * @subpackage 	Starkers
- * @since 		Starkers 4.0
+ * @subpackage 	Indicia Starter
  */
 ?>
-<?php Starkers_Utilities::get_template_parts( array( 'parts/shared/html-header', 'parts/shared/header' ) ); ?>
+<?php Indicia_Utilities::get_template_parts( array( 'parts/shared/html-header', 'parts/shared/header' ) ); ?>
 
 <?php if ( have_posts() ): ?>
 
@@ -38,4 +37,4 @@
 
 <?php endif; ?>
 
-<?php Starkers_Utilities::get_template_parts( array( 'parts/shared/footer','parts/shared/html-footer') ); ?>
+<?php Indicia_Utilities::get_template_parts( array( 'parts/shared/footer','parts/shared/html-footer') ); ?>

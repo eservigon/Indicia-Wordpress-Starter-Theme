@@ -1,20 +1,19 @@
 <?php
 
 /**
- * Starkers_Utilities
+ * Indicia_Utilities
  *
- * Starkers Utilities Class v.1.1
+ *  Indicia Utilities Class v.1.1
  *
  * @package 	WordPress
- * @subpackage 	Starkers
- * @since 		Starkers 4.0
+ * @subpackage 	Indicia Starter
  *
  * We've included a number of helper functions that we use in every theme we produce.
- * The main one that is used in Starkers is Starkers_Utilities::add_slug_to_body_class(), this will add the page or post slug to the body class
+ * The main one that is used in Starkers is Indicia_Utilities::add_slug_to_body_class(), this will add the page or post slug to the body class
  *
  */
  
- class Starkers_Utilities {
+ class Indicia_Utilities {
 
 	/**
 	 * Print a pre formatted array to the browser - very useful for debugging
