@@ -1,0 +1,209 @@
+/* ----------------------------------------------------------------------------
+ * Structure
+ * ------------------------------------------------------------------------- */
+
+/* global box-sizing */
+*,
+*:after,
+*:before {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+/* html element 62.5% font-size for REM use i.e. 1rem = 10px*/
+html {
+    font-size: 62.5%;
+    height:100%;
+    min-height:100%;
+}
+
+body {
+    font: { 
+	    weight: 400;
+	    size: 1.5em;
+	    family: $font-family-serif; 
+    }
+    line-height: 1.6;
+    color: $font-color;
+    margin: 0;
+    background: $white !important;
+    height:100%;
+    min-height:100%;
+}
+
+
+/* ----------------------------------------------------------------------------
+ * Grid
+ * ------------------------------------------------------------------------- */
+ .container {
+  position: relative;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+  
+  @include r(34) {
+	  width: 85%;  padding: 0; 
+  }
+  
+}
+  
+.column, .columns {
+  width: 100%;
+  float: left; 
+  
+  @include r(48)  { margin-left: 4%; }
+  
+  &:first-child { margin-left: 0; }
+
+ 	 &.one  { 
+	 	  @include r(48) { width: 4.66666666667%; }
+	 }
+	 
+	 &.two  { 
+	 	  @include r(48) { width: 13.3333333333%; }
+	 }
+	 
+	 &.three  { 
+	 	  @include r(48) { width: 22%;            }
+	 }
+	 
+	 &.four  { 
+	 	  @include r(48) { width: 30.6666666667%; }
+	 }
+	 
+	 &.five { 
+	 	  @include r(48) { width: 39.3333333333%; }
+	 }
+	 
+	 &.six  { 
+	 	  @include r(48) { width: 48%;			  }
+	 } 
+	 
+	 &.seven  { 
+	 	  @include r(48) { width: 56.6666666667%; }
+	 }
+	 
+	 &.eight  { 
+	 	  @include r(48) { width: 65.3333333333%; }
+	 }
+	 
+	 &.nine  { 
+	 	  @include r(48) { width: 74.0%;  }
+	 }
+	 
+	 &.ten  { 
+	 	  @include r(48) { width: 82.6666666667%; }
+	 }
+	 
+	 &.eleven { 
+	 	  @include r(48) { width: 91.3333333333%; }
+	 }
+	 
+	 &.twelve  { 
+	 	  @include r(48) { width: 100%; margin-left: 0; }
+	 }
+	 
+	 &.one-third  { 
+	 	  @include r(48) { width: 30.6666666667%; }
+	 }
+	 
+	 &.ttwo-thirds  { 
+	 	  @include r(48) { width: 65.3333333333%; }
+	 }
+	 
+	 &.one-half  { 
+	 	@include r(48)  { width: 48%; }
+	 }	 
+
+	&.offset-by-one { 
+		@include r(48) { margin-left: 8.66666666667%; }
+	}
+	
+	&.offset-by-two {        
+		@include r(48) { margin-left: 17.3333333333%; }
+	}
+	&.offset-by-three  {      
+		@include r(48) { margin-left: 26%;            }
+	}
+	
+	&.offset-by-four {       
+		@include r(48) { margin-left: 34.6666666667%; }
+	}
+	
+	&.offset-by-five {       
+		@include r(48) { margin-left: 43.3333333333%; }
+	}
+	
+	&.offset-by-six {        
+		@include r(48) { margin-left: 52%;            }
+	}
+	
+	&.offset-by-seven {      
+		@include r(48)  { margin-left: 60.6666666667%; }
+	}
+	
+	&.offset-by-eight {      
+		@include r(48)  { margin-left: 69.3333333333%; }
+	}
+	
+	&.offset-by-nine {       
+		@include r(48) { margin-left: 78.0%;          }
+	}
+	
+	&.offset-by-ten {        
+		@include r(48) { margin-left: 86.6666666667%; }
+	}
+	
+	&.offset-by-eleven {     
+		@include r(48)  { margin-left: 95.3333333333%; }
+	}
+	&.offset-by-one-third {   
+		@include r(48) { margin-left: 34.6666666667%; }
+	}
+	
+	&.offset-by-two-thirds {  
+		@include r(48) { margin-left: 69.3333333333%; }
+	}
+	
+	&.offset-by-one-half {    
+		@include r(48) { margin-left: 52%; }
+	}
+} 
+
+
+/* Spacing */
+button,
+.button {
+  margin-bottom: 1rem; }
+input,
+textarea,
+select,
+fieldset {
+  margin-bottom: 1.5rem; }
+pre,
+blockquote,
+dl,
+figure,
+table,
+p,
+ul,
+ol,
+form {
+  margin-bottom: 2.5rem; }
+
+
+/* Self Clearing Goodness */
+ .u-cf {
+  content: "";
+  display: table;
+  clear: both;
+ }
+  
+ .container, .row { 
+	 @include clearfix
+}

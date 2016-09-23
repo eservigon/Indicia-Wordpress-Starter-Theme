@@ -1,0 +1,2 @@
+# indiciawp
+Indicia WordPress Theme
